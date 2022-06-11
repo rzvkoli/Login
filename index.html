@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="src/css/style.css" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body onload="captcha()" >
+    <div class="container-fluid">
+			<div class="card">
+                <h1>Login</h1>
+                <div>
+                    <form action="" method="get">
+		                <input class="userName" id="userName" onkeyup="userNameFunc()" type="text" placeholder=" Username" >
+                        <span id="userNameError"></span>
+                        <input class="userPassword" id="userPassword" onkeyup="userPasswordFunc()" type="password" placeholder=" Password">
+                        <span id="userPasswordError"></span>
+                        <a href="javascript:void(0)" class="button hvr-grow">Login to your account
+                        </a>
+	                </form>
+                </div>
+            </div>
+    <script src="src/js/script.js" ></script>
+</body>
+</html>

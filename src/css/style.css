@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Vazirmatn:wght@100;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to left top, #ffa600, #ffad02, #ffb506, #ffbc0b, #ffc312);
+    height: 100vh;
+}
+
+.card{
+    height: 28em;
+    width: 20em;
+    padding: 5em;
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 0 1px 2px 0 ;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+h1{
+    font-size: 2.25em;
+    color: #FFC312;
+    position: relative;
+    top: -0.5em;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+input{
+    caret-color: #FFC312;
+}
+
+input::placeholder {
+    color: #000;
+}
+
+input:focus::placeholder{
+    color: #FFC312;
+}
+
+input:focus{
+    outline: none;
+}
+
+.userName , .userPassword{
+    position: relative;
+    top: 1em;
+    left: -1em;
+    font-size: 1.25em;
+    height: 2.5em;
+    width: 17em;
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    border-bottom: solid #000 3px;
+    padding-left: 0.25em;
+    background: none;
+    color: #FFC312;
+}
+
+span{
+    color:#FFC312;
+    position: relative;
+    top: 1em;
+    left: 0.5em;
+    font-size: 1.15em;
+}
+
+a{
+    background-image: linear-gradient(
+    to right,
+    #FFC312 50%,
+    #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 10px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    font-size: 2em;
+    font-weight: bolder;
+    position: relative;
+    top: 2em;
+    cursor: pointer;
+}
+  
+a:before{
+    content: '';
+    background-image: linear-gradient(
+    to right,
+    #FFC312 ,
+    #FFC312
+    );
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+  
+a:hover{
+    background-position: 0;
+}
+  
+a:hover::before{
+    width: 100%;
+}
+
+@media only screen and (max-width:426px){
+    .card{
+        height: 25em;
+        width: 15em;
+        padding: 3em;
+    }
+
+    h1{
+        font-size: 1.75em;
+    }
+
+    .userName , .userPassword{
+        left: -1.5em;
+        font-size: 1em;
+    }
+
+    span{
+        position: relative;
+        top: 1em;
+        left: 0.5em;
+        font-size: 0.75em;
+    }
+    
+    a{
+        font-size: 1.5em;
+        position: relative;
+        top: 2em;
+        left: 0.5em;
+    }
+  }
+
+@media only screen and (max-width:376px){
+    .card{
+        height: 25em;
+        width: 12em;
+    }
+
+    .userName , .userPassword{
+        left: -1em;
+        font-size: 0.75em;
+    }
+
+    span{
+        position: relative;
+        top: 1em;
+        left: 0.5em;
+        font-size: 0.5em;
+    }
+    
+    a{
+        font-size: 1.25em;
+        position: relative;
+        top: 2em;
+        left: 0.5em;
+    }
+}
+
+@media only screen and (max-width:376px){
+    .card{
+        height: 20em;
+        width: 10em;
+    }
+
+    h1{
+        font-size: 1.5em;
+    }
+
+    .userName , .userPassword{
+        left: -2.25em;
+        font-size: 0.75em;
+    }
+
+    span{
+        position: relative;
+        top: 1em;
+        left: 0.5em;
+        font-size: 0.5em;
+    }
+    
+    a{
+        font-size: 1em;
+        position: relative;
+        top: 2em;
+        left: 0.5em;
+    }
+}
